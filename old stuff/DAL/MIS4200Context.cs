@@ -15,10 +15,10 @@ namespace sg160815MIS4200.DAL
             // this method is a 'constructor' and is called when a new context is created
             //Database.SetInitializer(new MigrateDatabaseToLatestVersion<MIS4200Context, sg160815MIS4200_1.Migrations.MISContext.Configuration>("DefaultConnection")
         }
-        public DbSet<Orders> Orders { get; set; }
-        public DbSet<Customer> Customers { get; set; }
-        public DbSet<Products> Products { get; set; }
-        public DbSet <OrderDetails> OrderDetails { get; set; }
+        public DbSet<Course> Courses { get; set; }
+        public DbSet<Students> Students { get; set; }
+        public DbSet<Instructor> Instructors { get; set; }
+        public DbSet <Enrollment> Enrollments { get; set; }
 
         //add this method - it will be used later
 
