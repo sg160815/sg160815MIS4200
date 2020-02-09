@@ -6,8 +6,9 @@ using System.Web;
 
 namespace sg160815MIS4200.Models
 {
-    public class Students
+    public class Student
     {
+        
         public int studentID { get; set; }
 
         [Display(Name = "First Name")]
@@ -22,7 +23,7 @@ namespace sg160815MIS4200.Models
         [Display(Name = "Phone Number")]
         public string phone { get; set; }
         public DateTime studentSince { get; set; }
-        public ICollection<Course> Course { get; set; }
+        public ICollection<Enrollment> Enrollment { get; set; }
         public string fullName { 
             get
             {

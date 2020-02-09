@@ -16,7 +16,7 @@ namespace sg160815MIS4200.DAL
             //Database.SetInitializer(new MigrateDatabaseToLatestVersion<MIS4200Context, sg160815MIS4200_1.Migrations.MISContext.Configuration>("DefaultConnection")
         }
         public DbSet<Course> Courses { get; set; }
-        public DbSet<Students> Students { get; set; }
+        public DbSet<Student> Students { get; set; }
         public DbSet<Instructor> Instructors { get; set; }
         public DbSet <Enrollment> Enrollments { get; set; }
 

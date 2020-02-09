@@ -9,10 +9,11 @@ namespace sg160815MIS4200.Models
     public class Course
     {
         [Key]
+        public int courseID { get; set; }
 
-        public int coruseID { get; set; }
+        public string courseName { get; set; }
         public string courseDescription { get; set; }
-        public DateTime enrollmentDate { get; set; }
+        public DateTime courseTime { get; set; }
         // add any other fields as appropriate
         //Order is on the "one" side of a one-to-many relationship with OrderDetail
         //and we indicate that with an ICollection
@@ -20,6 +21,6 @@ namespace sg160815MIS4200.Models
         //Order is on the Many side of the one-to-many relation between Customer
         //and Order and we represent that relationship like this
         public int studentID { get; set; }
-        public virtual Students Student { get; set; }
+        public virtual Student Student { get; set; }
     }
 }
