@@ -2,31 +2,44 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>MIS Class</h1>
-    <p class="lead">We love this class and everything about it! I cannot wait to learn more. </p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+    <div class="jumbotron">
+        <div class="jumbotron" style="background-color:#96CEB4">
+        <h1>MIS 4200</h1>
+        <p class="text-white">We love this class and everything about it! I cannot wait to learn more. Click to learn more about the MIS degree at OU.  </p>
+        <p><a href="https://business.ohio.edu/academics/undergrad-majors/management-information-systems/undergraduate-degree/" class="btn btn-secondary">Learn more &raquo;</a></p>
+    </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>About Me</h2>
-        <p>
-            My name is Sam Glaser. I am a senior from Pittsburgh, Pennsylvania and I am studying Management Information Sytems and Business Analytics. I am in Alpha Kappa Psi as well as Select Leaders and the Center for Consumer Research and Anlaytics. 
-        </p>
+        <h2><span class="glyphicon glyphicon-user"> About Me</h2>
+        <div>
+            <div class="well well-sm"> My name is Sam Glaser. I am a senior from Pittsburgh, Pennsylvania and I am studying Management Information Sytems and Business Analytics. I am in Alpha Kappa Psi as well as Select Leaders and the Center for Consumer Research and Anlaytics.</div>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Click here to learn more about me!
+            </button>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="https://gaptrail.org/">Trail Biking</a><br />
+                <a class="dropdown-item" href="https://shopsteelcity.com/">Repping my City</a><br />
+                <a class="dropdown-item" href="https://www.oakmont-countryclub.org/">My Favorite Golf Course</a>
+            </div>
+        </div>
     </div>
     <div class="col-md-4">
-        <h2>Classwork</h2>
-        <div>Projects I will be completing in this class./div>
+        <h2><span class="glyphicon glyphicon-paperclip">  Classwork</h2>
+        <div>Projects I will be completing in this class.</div>
         <h3>Links to sample models</h3>
-        @Html.ActionLink("Course", "Index", "Courses")<br />
-        @Html.ActionLink("Enrollment", "Index", "Enrollments")<br />
-        @Html.ActionLink("Instructor", "Index", "Instructors")<br />
-        @Html.ActionLink("Student", "Index", "Students")
+
+        @Html.ActionLink("Course", "Index", "Courses", null, new { @class = "btn btn-primary" })<br />
+        @Html.ActionLink("Enrollment", "Index", "Enrollments", null, new { @class = "btn btn-primary" })<br />
+        @Html.ActionLink("Instructor", "Index", "Instructors", null, new { @class = "btn btn-primary" })<br />
+        @Html.ActionLink("Student", "Index", "Students", null, new { @class = "btn btn-primary" })
 
     </div>
     <div class="col-md-4">
-        <h2>Coding Knowledge</h2>
-        <div>I have advanced experience in HTML and database management. </div>
+        <h2><span class="glyphicon glyphicon-briefcase"> Full Time</h2>
+        <div class="well well-sm"> Upon full-time graduation, I will be working as a Corporate Rotational Analyst at JP Morgan and Chase in Columbus, Ohio starting in early August. I cannot wait for this opportunity and I am extatic to see where it takes me.</div>
     </div>
 </div>

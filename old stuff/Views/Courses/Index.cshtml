@@ -1,18 +1,18 @@
 ﻿@model IEnumerable<sg160815MIS4200.Models.Course>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Courses";
 }
 
-<h2>Index</h2>
+<h2>Courses</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+<table class="table table-striped">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Student.studentFirstName)
+            @Html.DisplayNameFor(model => model.Student.fullName)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.courseName)
@@ -29,7 +29,7 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Student.studentFirstName)
+            @Html.DisplayFor(modelItem => item.Student.fullName)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.courseName)
